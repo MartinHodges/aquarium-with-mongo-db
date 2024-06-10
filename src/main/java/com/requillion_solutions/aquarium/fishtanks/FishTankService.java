@@ -30,10 +30,7 @@ public class FishTankService {
 
     public FishTank createFishTank(FishTankPostDTO dto) {
 
-        FishTank fishTank = new FishTank();
-
-        fishTank.setId(UUID.randomUUID());
-        fishTank.setName(dto.getName());
+        FishTank fishTank = new FishTank(dto.getName());
 
         fishTank = fishTankRepository.save(fishTank);
 
@@ -57,7 +54,6 @@ public class FishTankService {
         Optional<FishTank> fishTankFound = fishTankRepository.findById(id);
 
         if (fishTankFound.isPresent()) {
-            FishTank fishTank = fishTankFound.get();
             fishTankRepository.deleteById(id);
         }
     }

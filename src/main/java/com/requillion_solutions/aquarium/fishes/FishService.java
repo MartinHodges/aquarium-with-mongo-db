@@ -28,10 +28,7 @@ public class FishService {
 
     public Fish createFish(FishPostDTO dto) {
 
-        Fish fish = new Fish();
-
-        fish.setId(UUID.randomUUID());
-        fish.setType(dto.getType());
+        Fish fish = new Fish(dto.getType());
 
         fish = fishRepo.save(fish);
 
