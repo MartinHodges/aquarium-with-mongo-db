@@ -5,7 +5,7 @@ be used within a Kubernetes cluster.
 
 It was created to experiment with using MongoDB
 within a Kubernetes cluster as described in 
-[my Medium article](https://medium.com/@martin.hodges), where you can find more
+[my Medium article](https://medium.com/@martin.hodges/my-experience-adding-a-mongodb-no-sql-database-to-my-kubernetes-cluster-f43fe72fa0ba), where you can find more
 details.
 
 ## Profiles
@@ -46,7 +46,7 @@ The REST API end points are at:
 
 ## Additional documentation
 You can find more documentation about the project in
-[my medium article](https://medium.com/@martin.hodges).
+[my medium article](https://medium.com/@martin.hodges/my-experience-adding-a-mongodb-no-sql-database-to-my-kubernetes-cluster-f43fe72fa0ba).
 You will also find references in this article to other
 articles that explain how to set up a local Kubernetes 
 cluster using Kind.
